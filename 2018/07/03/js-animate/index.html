@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="js,jquery," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="我们在开发项目的过程中，经常会遇到类似于jq的animate()，queue(),end(),或者是angular.js的promise等延时加载和链式调用的方法，理解他们的原理对我们编程能力的提高帮助极大。 animate用法具体参数详解; animate动画实例123456789101112131415161718192021222324252627282930313233&amp;lt;!DOCTY">
+<meta name="description" content="前言 我们在开发项目的过程中，经常会遇到类似于jq的animate()，queue(),end(),或者是angular.js的promise等延时加载和链式调用的方法，理解其原理有利于我们编程能力的提高    animate用法具体参数详解;   #########################   animate动画实例123456789101112131415161718192021222">
+<meta name="keywords" content="js,jquery">
 <meta property="og:type" content="article">
 <meta property="og:title" content="原生js仿jq实现链式调用，延时加载">
 <meta property="og:url" content="http://yoursite.com/2018/07/03/js-animate/index.html">
 <meta property="og:site_name" content="chllen&#39;s Blog">
-<meta property="og:description" content="我们在开发项目的过程中，经常会遇到类似于jq的animate()，queue(),end(),或者是angular.js的promise等延时加载和链式调用的方法，理解他们的原理对我们编程能力的提高帮助极大。 animate用法具体参数详解; animate动画实例123456789101112131415161718192021222324252627282930313233&amp;lt;!DOCTY">
+<meta property="og:description" content="前言 我们在开发项目的过程中，经常会遇到类似于jq的animate()，queue(),end(),或者是angular.js的promise等延时加载和链式调用的方法，理解其原理有利于我们编程能力的提高    animate用法具体参数详解;   #########################   animate动画实例123456789101112131415161718192021222">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-06T04:38:58.145Z">
+<meta property="og:updated_time" content="2018-07-06T04:57:32.356Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="原生js仿jq实现链式调用，延时加载">
-<meta name="twitter:description" content="我们在开发项目的过程中，经常会遇到类似于jq的animate()，queue(),end(),或者是angular.js的promise等延时加载和链式调用的方法，理解他们的原理对我们编程能力的提高帮助极大。 animate用法具体参数详解; animate动画实例123456789101112131415161718192021222324252627282930313233&amp;lt;!DOCTY">
+<meta name="twitter:description" content="前言 我们在开发项目的过程中，经常会遇到类似于jq的animate()，queue(),end(),或者是angular.js的promise等延时加载和链式调用的方法，理解其原理有利于我们编程能力的提高    animate用法具体参数详解;   #########################   animate动画实例123456789101112131415161718192021222">
 
 
 
@@ -292,6 +293,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -319,8 +342,11 @@
       
 
       
-        <p>我们在开发项目的过程中，经常会遇到类似于jq的animate()，queue(),end(),或者是angular.js的promise等延时加载和链式调用的方法，理解他们的原理对我们编程能力的提高<br>帮助极大。</p>
-<h3 id="animate用法"><a href="#animate用法" class="headerlink" title="animate用法"></a>animate用法</h3><p><a href="http://www.runoob.com/jquery/eff-animate.html" target="_blank" rel="noopener">具体参数详解</a>;</p>
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
+<p>我们在开发项目的过程中，经常会遇到类似于jq的animate()，queue(),end(),或者是angular.js的promise等延时加载和链式调用的方法，理解其原理有利于我们编程能力的提高  </p>
+</blockquote>
+<h3 id="animate用法"><a href="#animate用法" class="headerlink" title="animate用法"></a>animate用法</h3><p><a href="http://www.runoob.com/jquery/eff-animate.html" target="_blank" rel="noopener">具体参数详解</a>;  </p>
+<p>#########################  </p>
 <h3 id="animate动画实例"><a href="#animate动画实例" class="headerlink" title="animate动画实例"></a>animate动画实例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;utf-8&quot;&gt; </span><br><span class="line">&lt;title&gt;animate动画效果&lt;/title&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js&quot;&gt;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;script&gt; </span><br><span class="line">$(document).ready(function()&#123;</span><br><span class="line">	var div=$(&quot;div&quot;);</span><br><span class="line">	$(&quot;#start&quot;).click(function()&#123;</span><br><span class="line">		div.animate(&#123;height:300&#125;,&quot;slow&quot;);</span><br><span class="line">		div.animate(&#123;width:300&#125;,&quot;slow&quot;);</span><br><span class="line">		div.queue(function () &#123;</span><br><span class="line">			div.css(&quot;background-color&quot;,&quot;red&quot;);  </span><br><span class="line">			div.dequeue();</span><br><span class="line">		&#125;);</span><br><span class="line">		div.animate(&#123;height:100&#125;,&quot;slow&quot;);</span><br><span class="line">		div.animate(&#123;width:100&#125;,&quot;slow&quot;);</span><br><span class="line">	&#125;);</span><br><span class="line">	$(&quot;#stop&quot;).click(function()&#123;</span><br><span class="line">		div.clearQueue();</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt; </span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">&lt;button id=&quot;start&quot;&gt;开始动画&lt;/button&gt;</span><br><span class="line">&lt;button id=&quot;stop&quot;&gt;停止动画&lt;/button&gt;</span><br><span class="line">&lt;/p&gt;</span><br><span class="line">&lt;div style=&quot;background:#98bf21;height:100px;width:100px;position:relative&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 <p>使用原生js实现动画实例的效果，首先我们需要下面两个封装代码</p>
 <h4 id="js队列封装"><a href="#js队列封装" class="headerlink" title="js队列封装"></a>js队列封装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">var Queue = function() &#123;</span><br><span class="line">       this.list = [];</span><br><span class="line">   &#125;;</span><br><span class="line">   Queue.prototype = &#123;</span><br><span class="line">       constructor: Queue,</span><br><span class="line">       queue: function(fn) &#123;</span><br><span class="line">           this.list.push(fn)</span><br><span class="line">           return this;</span><br><span class="line">       &#125;,</span><br><span class="line">       wait: function(ms) &#123;</span><br><span class="line">           this.list.push(ms)</span><br><span class="line">           return this;</span><br><span class="line">       &#125;,</span><br><span class="line">       dequeue: function() &#123;</span><br><span class="line">           var self = this,</span><br><span class="line">               list = self.list;</span><br><span class="line">           self.isdequeue = true;</span><br><span class="line">           var el = list.shift() || function() &#123;&#125;;</span><br><span class="line">           if (typeof el == &quot;number&quot;) &#123;</span><br><span class="line">               setTimeout(function() &#123;</span><br><span class="line">                   self.dequeue();</span><br><span class="line">               &#125;, el);</span><br><span class="line">           &#125; else if (typeof el == &quot;function&quot;) &#123;</span><br><span class="line">               el.call(this)</span><br><span class="line">               if (list.length) &#123;</span><br><span class="line">                   self.dequeue();</span><br><span class="line">               &#125; else &#123;</span><br><span class="line">                   self.isdequeue = false;</span><br><span class="line">               &#125;</span><br><span class="line">           &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">       &#125;</span><br><span class="line">   &#125;;</span><br></pre></td></tr></table></figure>
@@ -347,6 +373,14 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+            <a href="/tags/jquery/" rel="tag"># jquery</a>
+          
+        </div>
+      
 
       
       
@@ -356,8 +390,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/02/hexo-1/" rel="next" title="使用Github+hexo搭建个人博客教程">
-                <i class="fa fa-chevron-left"></i> 使用Github+hexo搭建个人博客教程
+              <a href="/2018/07/02/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
           </div>
@@ -463,7 +497,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -496,7 +530,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#animate用法"><span class="nav-number">1.</span> <span class="nav-text">animate用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#animate动画实例"><span class="nav-number">2.</span> <span class="nav-text">animate动画实例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#js队列封装"><span class="nav-number">2.1.</span> <span class="nav-text">js队列封装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#封装动画框架："><span class="nav-number">2.2.</span> <span class="nav-text">封装动画框架：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#链式调用"><span class="nav-number">2.3.</span> <span class="nav-text">链式调用</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#animate用法"><span class="nav-number">2.</span> <span class="nav-text">animate用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#animate动画实例"><span class="nav-number">3.</span> <span class="nav-text">animate动画实例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#js队列封装"><span class="nav-number">3.1.</span> <span class="nav-text">js队列封装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#封装动画框架："><span class="nav-number">3.2.</span> <span class="nav-text">封装动画框架：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#链式调用"><span class="nav-number">3.3.</span> <span class="nav-text">链式调用</span></a></li></ol></li></ol></div>
             
 
           </div>
