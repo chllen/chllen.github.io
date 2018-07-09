@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="js," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="前言：bind方法，字面理解绑定意思，是在ECMAScript 5中新增的方法，但在ES3也可以模拟bind()。bind所做的就是自动封装函数在函数自己的闭包中，这样我们可以捆绑上下文（this关键字）和一系列参数到原来的函数。 bind()基本用法1234567891011var p = new Point(1, 2);p.toString(); // &amp;apos;1,2&amp;apos;	var">
+<meta name="keywords" content="js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/06/23/hello-world/index.html">
+<meta property="og:title" content="javascript中bind()方法的使用与实现">
+<meta property="og:url" content="http://yoursite.com/2018/07/08/js-bind/index.html">
 <meta property="og:site_name" content="chllen&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="前言：bind方法，字面理解绑定意思，是在ECMAScript 5中新增的方法，但在ES3也可以模拟bind()。bind所做的就是自动封装函数在函数自己的闭包中，这样我们可以捆绑上下文（this关键字）和一系列参数到原来的函数。 bind()基本用法1234567891011var p = new Point(1, 2);p.toString(); // &amp;apos;1,2&amp;apos;	var">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-06T05:02:11.733Z">
+<meta property="og:updated_time" content="2018-07-09T03:16:56.601Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="javascript中bind()方法的使用与实现">
+<meta name="twitter:description" content="前言：bind方法，字面理解绑定意思，是在ECMAScript 5中新增的方法，但在ES3也可以模拟bind()。bind所做的就是自动封装函数在函数自己的闭包中，这样我们可以捆绑上下文（this关键字）和一系列参数到原来的函数。 bind()基本用法1234567891011var p = new Point(1, 2);p.toString(); // &amp;apos;1,2&amp;apos;	var">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/23/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/08/js-bind/"/>
 
 
 
 
 
-  <title>Hello World | chllen's Blog</title>
+  <title>javascript中bind()方法的使用与实现 | chllen's Blog</title>
   
 
 
@@ -252,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/23/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/08/js-bind/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="chllen">
@@ -269,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">javascript中bind()方法的使用与实现</h1>
         
 
         <div class="post-meta">
@@ -281,8 +282,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-23T00:00:00+08:00">
-                2018-06-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-08T23:55:40+08:00">
+                2018-07-08
               </time>
             
 
@@ -291,6 +292,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -319,15 +342,15 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>前言：<br>bind方法，字面理解绑定意思，是在ECMAScript 5中新增的方法，但在ES3也可以模拟bind()。bind所做的就是自动封装函数在函数自己的闭包中，这样我们可以捆绑上下文（this关键字）和一系列参数到原来的函数。</p>
+<h3 id="bind-基本用法"><a href="#bind-基本用法" class="headerlink" title="bind()基本用法"></a>bind()基本用法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var p = new Point(1, 2);</span><br><span class="line">p.toString(); // &apos;1,2&apos;</span><br><span class="line">	</span><br><span class="line">var YAxisPoint = Point.bind(null, 1);</span><br><span class="line">	</span><br><span class="line">var axisPoint = new YAxisPoint(5);</span><br><span class="line">axisPoint.toString();</span><br><span class="line">axisPoint instanceof Point; // true</span><br><span class="line">axisPoint instanceof YAxisPoint; // true</span><br><span class="line">new Point(17, 42) instanceof YAxisPoint; // true</span><br><span class="line">YAxisPoint.isPrototypeOf(new Point(17, 42));//false</span><br></pre></td></tr></table></figure>
+<p>上面例子中Point和YAxisPoint共享原型，因此使用instanceof运算符判断时为true。</p>
+<p>instanceof和isPrototypeOf的区别：<br>instanceof运算符：左操作数是待检测其类的对象，有操作数是定义类的构造函数。如果o继承自c.prototype,则表达式o instanceof c值为true，这里可以不是直接继承，如果o所继承自另一个对象，后一个对象继承自c.prototype,这个表达式运算结果也是true；<br>isPrototypeOf方法：检测对象原型链上是否存在特定的原型对象，<span style="color:red">可以检测是否存在构造函数为中介的方法</span></p>
+<h3 id="bind实现"><a href="#bind实现" class="headerlink" title="bind实现"></a>bind实现</h3><p><a href="https://segmentfault.com/a/1190000002662251" target="_blank" rel="noopener">参考博客</a><br>可以通过如下代码实现这种绑定<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function bind()&#123;</span><br><span class="line">  if(f.bind) &#123;</span><br><span class="line">	return f.bind();&#125;</span><br><span class="line">  else &#123;</span><br><span class="line">	return function ()&#123;</span><br><span class="line">	  return f.apply(this,arguments);</span><br><span class="line">	&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>考虑到函数柯里化的情况，我们可以构建一个更加健壮的bind()；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">if(!Function.prototype.bind)&#123;</span><br><span class="line">  Function.prototype.bind = function(context)&#123;</span><br><span class="line">    var args = Array.prototype.slice.call(arguments, 1);</span><br><span class="line">	self = this;</span><br><span class="line">	bound = function()&#123;</span><br><span class="line">	  var innerArgs = Array.prototype.slice.call(arguments);</span><br><span class="line">	  var finalArgs = args.concat(innerArgs);</span><br><span class="line">		//this代表window对象，表示self为全局方法</span><br><span class="line">		return self.apply(this, finalArgs);</span><br><span class="line">	  &#125;;</span><br><span class="line">	bound.prototype = self.prototype;</span><br><span class="line">	return bound;		</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="arguments的使用"><a href="#arguments的使用" class="headerlink" title="arguments的使用"></a>arguments的使用</h3><p>arguments对象，可以获取function的参数值，为什么我们要使用Array.prototype.slice.call(arguments),而不直接使用arguments.slice()呢？<br>我们需要认识到，arguments是一个类数组对象，我们给出类数组的对象的代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var a=&#123;&#125;;//从一个常规空对象开始</span><br><span class="line">//添加一些属性，称为“类数组”</span><br><span class="line">var i = 0;</span><br><span class="line">while(i&lt;10)&#123;</span><br><span class="line">  a[i] = i*i;</span><br><span class="line">  i++;</span><br><span class="line">&#125;</span><br><span class="line">//类数组不能一定要添加length属性</span><br><span class="line">a.length = i;</span><br></pre></td></tr></table></figure></p>
+<p>上面的类数组对象使用a.slice(),会出现typeError的错误。</p>
+<p><a href="https://www.cnblogs.com/henryli/p/3700945.html" target="_blank" rel="noopener">Array.prototype.slice为什么能将类数组对象转为真正的数组？</a></p>
 
       
     </div>
@@ -343,6 +366,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+        </div>
+      
 
       
       
@@ -352,15 +381,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/07/03/js-animate/" rel="next" title="原生js仿jq实现链式调用，延时加载">
+                <i class="fa fa-chevron-left"></i> 原生js仿jq实现链式调用，延时加载
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/25/hexo-1/" rel="prev" title="使用Github+hexo搭建个人博客教程">
-                使用Github+hexo搭建个人博客教程 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -492,7 +521,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#bind-基本用法"><span class="nav-number">1.</span> <span class="nav-text">bind()基本用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bind实现"><span class="nav-number">2.</span> <span class="nav-text">bind实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arguments的使用"><span class="nav-number">3.</span> <span class="nav-text">arguments的使用</span></a></li></ol></div>
             
 
           </div>
