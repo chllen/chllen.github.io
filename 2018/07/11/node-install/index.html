@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="js,node.js," />
 
 
 
@@ -79,17 +79,20 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="前言：  在CentOS下安装NodeJS有以下几种方法。使用的CentOS版本为7.4。CentOS其他版本的NodeJS安装大同小异，也可以参看本文的方法。  直接部署首先安装wget yum install -y wget  下载nodejs最新的bin包可以在下载页面中找到下载地址,找到Linux Binaries (x64)版本地址。依次执行指令：  cd /usr/localmkdir">
+<meta name="keywords" content="js,node.js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/06/23/hello-world/index.html">
+<meta property="og:title" content="CentOS安装NodeJS">
+<meta property="og:url" content="http://yoursite.com/2018/07/11/node-install/index.html">
 <meta property="og:site_name" content="chllen&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="前言：  在CentOS下安装NodeJS有以下几种方法。使用的CentOS版本为7.4。CentOS其他版本的NodeJS安装大同小异，也可以参看本文的方法。  直接部署首先安装wget yum install -y wget  下载nodejs最新的bin包可以在下载页面中找到下载地址,找到Linux Binaries (x64)版本地址。依次执行指令：  cd /usr/localmkdir">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-06T05:02:11.733Z">
+<meta property="og:image" content="http://yoursite.com/2018/07/11/node-install/01.png">
+<meta property="og:updated_time" content="2018-07-11T11:11:10.958Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="CentOS安装NodeJS">
+<meta name="twitter:description" content="前言：  在CentOS下安装NodeJS有以下几种方法。使用的CentOS版本为7.4。CentOS其他版本的NodeJS安装大同小异，也可以参看本文的方法。  直接部署首先安装wget yum install -y wget  下载nodejs最新的bin包可以在下载页面中找到下载地址,找到Linux Binaries (x64)版本地址。依次执行指令：  cd /usr/localmkdir">
+<meta name="twitter:image" content="http://yoursite.com/2018/07/11/node-install/01.png">
 
 
 
@@ -119,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/23/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/11/node-install/"/>
 
 
 
 
 
-  <title>Hello World | chllen's Blog</title>
+  <title>CentOS安装NodeJS | chllen's Blog</title>
   
 
 
@@ -252,7 +255,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/23/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/11/node-install/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="chllen">
@@ -269,7 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">CentOS安装NodeJS</h1>
         
 
         <div class="post-meta">
@@ -281,8 +284,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-23T00:00:00+08:00">
-                2018-06-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-11T14:53:09+08:00">
+                2018-07-11
               </time>
             
 
@@ -291,6 +294,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/node-js/" itemprop="url" rel="index">
+                    <span itemprop="name">node.js</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -319,15 +344,62 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>前言：</p>
+<blockquote>
+<p>在CentOS下安装NodeJS有以下几种方法。使用的CentOS版本为7.4。CentOS其他版本的NodeJS安装大同小异，也可以参看本文的方法。</p>
+</blockquote>
+<h3 id="直接部署"><a href="#直接部署" class="headerlink" title="直接部署"></a>直接部署</h3><h4 id="首先安装wget"><a href="#首先安装wget" class="headerlink" title="首先安装wget"></a>首先安装wget</h4><blockquote>
+<p>yum install -y wget</p>
+</blockquote>
+<h4 id="下载nodejs最新的bin包"><a href="#下载nodejs最新的bin包" class="headerlink" title="下载nodejs最新的bin包"></a>下载nodejs最新的bin包</h4><p>可以在<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">下载页面</a>中找到下载地址,找到Linux Binaries (x64)版本地址。依次执行指令：</p>
+<blockquote>
+<p>cd /usr/local<br>mkdir node<br>cd node<br>wget <a href="https://nodejs.org/dist/v10.6.0/node-v10.6.0-linux-x64.tar.xz" target="_blank" rel="noopener">https://nodejs.org/dist/v10.6.0/node-v10.6.0-linux-x64.tar.xz</a></p>
+</blockquote>
+<h3 id="解压包"><a href="#解压包" class="headerlink" title="解压包"></a>解压包</h3><blockquote>
+<p>xz -d node-v10.6.0-linux-x64.tar.xz<br>tar -xf node-v9.3.0-linux-x64.tar</p>
+</blockquote>
+<h3 id="部署bin文件"><a href="#部署bin文件" class="headerlink" title="部署bin文件"></a>部署bin文件</h3><p>先确认你nodejs的路径，我这里的路径为/usr/local/node/node-v10.6.0-linux-x64/bin。确认后依次执行</p>
+<blockquote>
+<p>ln -s /usr/local/node/node-v10.6.0-linux-x64/bin /usr/bin/node<br>ln -s /usr/local/node/node-v10.6.0-linux-x64/bin /usr/bin/npm  </p>
+</blockquote>
+<p>注意：ln的源件名和连接文件名都是绝对路劲,路径不对会报-bash: /usr/bin/node: Too many levels of symbolic links的错误<br>ps:<br>用来为文件创件连接，连接类型分为硬连接和符号连接两种。<br>符号链接：符号链接相当于windows下的快捷方式，这个你懂得吧。windows下的快捷方式，如果源文件删除了，快捷方式就没用啦。<br>硬链接：是指当你建立了一个硬链接之后，就算有一个被删除了，用另一个也可以访问到你要访问的数据。也就是说源文件被删除了，用硬链接产生的文件也可以访问要访问的数据。符号链接是不行的哦，会报错。不信自己打上去试试。实践实践再实践。  </p>
+<h3 id="编译部署"><a href="#编译部署" class="headerlink" title="编译部署"></a>编译部署</h3><h4 id="安装gcc，make，openssl，wget"><a href="#安装gcc，make，openssl，wget" class="headerlink" title="安装gcc，make，openssl，wget"></a>安装gcc，make，openssl，wget</h4><blockquote>
+<p>yum install -y gcc make gcc-c++ openssl-devel wget  </p>
+</blockquote>
+<h4 id="下载源代码包"><a href="#下载源代码包" class="headerlink" title="下载源代码包"></a>下载源代码包</h4><p>同样的，你可以在下载页面<a href="https://nodejs.org/en/download/中找到下载地址,下载Source" target="_blank" rel="noopener">https://nodejs.org/en/download/中找到下载地址,下载Source</a> Code源码包。然后执行指令</p>
+<blockquote>
+<p>wget <a href="https://nodejs.org/dist/v10.6.0/node-v10.6.0.tar.gz" target="_blank" rel="noopener">https://nodejs.org/dist/v10.6.0/node-v10.6.0.tar.gz</a></p>
+</blockquote>
+<h4 id="解压源代码包"><a href="#解压源代码包" class="headerlink" title="解压源代码包"></a>解压源代码包</h4><blockquote>
+<p>tar -xf node-v9.3.0.tar.gz</p>
+</blockquote>
+<h4 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h4><p>进入源代码所在路径</p>
+<blockquote>
+<p>cd node-v9.3.0</p>
+</blockquote>
+<p>先执行配置脚本  </p>
+<blockquote>
+<p>./configure</p>
+</blockquote>
+<p>编译与部署</p>
+<blockquote>
+<p>make &amp;&amp; make install  </p>
+</blockquote>
+<p>接着就是等待编译完成。如果内存不够会报o(╥﹏╥)o</p>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><blockquote>
+<p>node -v<br>npm  </p>
+</blockquote>
+<p>如果正确输出版本号，则部署OK。/usr/lib –放置了node_modules，即nodejs的各种模块</p>
+<h3 id="升级node-js和npm"><a href="#升级node-js和npm" class="headerlink" title="升级node.js和npm"></a>升级node.js和npm</h3><p>npm中有一个模块叫做“n”，专门用来管理node.js版本的。<br>更新到最新的稳定版只需要在命令行中打下如下代码：</p>
+<blockquote>
+<p>npm install -g n  </p>
+</blockquote>
+<p>在n的安装目录下，我这边的目录是 /usr/local/node/node-v10.6.0-linux-x64/bin</p>
+<blockquote>
+<p>./n v6.2.0<br><img src="/2018/07/11/node-install/01.png" alt=""><br>如需最新版本则用./n latest 可以安装最新版本</p>
+</blockquote>
+<p>当然，n后面也可以跟具体的版本号：./n v6.2.0  </p>
+<p>版本切换<br>./n v10.6.0<br>不存在时安装，存在时切换</p>
 
       
     </div>
@@ -343,6 +415,14 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+            <a href="/tags/node-js/" rel="tag"># node.js</a>
+          
+        </div>
+      
 
       
       
@@ -352,15 +432,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/07/10/js-reference/" rel="next" title="js中值引用和地址引用">
+                <i class="fa fa-chevron-left"></i> js中值引用和地址引用
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/25/hexo-1/" rel="prev" title="使用Github+hexo搭建个人博客教程">
-                使用Github+hexo搭建个人博客教程 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -492,7 +572,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#直接部署"><span class="nav-number">1.</span> <span class="nav-text">直接部署</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#首先安装wget"><span class="nav-number">1.1.</span> <span class="nav-text">首先安装wget</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#下载nodejs最新的bin包"><span class="nav-number">1.2.</span> <span class="nav-text">下载nodejs最新的bin包</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解压包"><span class="nav-number">2.</span> <span class="nav-text">解压包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署bin文件"><span class="nav-number">3.</span> <span class="nav-text">部署bin文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编译部署"><span class="nav-number">4.</span> <span class="nav-text">编译部署</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装gcc，make，openssl，wget"><span class="nav-number">4.1.</span> <span class="nav-text">安装gcc，make，openssl，wget</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#下载源代码包"><span class="nav-number">4.2.</span> <span class="nav-text">下载源代码包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解压源代码包"><span class="nav-number">4.3.</span> <span class="nav-text">解压源代码包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#编译"><span class="nav-number">4.4.</span> <span class="nav-text">编译</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试"><span class="nav-number">5.</span> <span class="nav-text">测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#升级node-js和npm"><span class="nav-number">6.</span> <span class="nav-text">升级node.js和npm</span></a></li></ol></div>
             
 
           </div>
